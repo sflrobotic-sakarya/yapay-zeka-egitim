@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapay Zekâya İlk Adım | Eğitim Portalı</title>
+    <style>
+        :root {
+            --primary: #4A90E2;
+            --secondary: #67B26F;
+            --accent: #FF7E5F;
+            --dark: #2F3B52;
+            --light: #F8FAFC;
+            --shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #444;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: -40px auto 40px auto;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            margin-bottom: 30px;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .week-badge {
+            background: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .week-title {
+            font-size: 1.8rem;
+            color: var(--dark);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .method-box {
+            background: #f0f7ff;
+            border-left: 5px solid var(--primary);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .method-box strong {
+            color: var(--primary);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '🚀';
+            position: absolute;
+            left: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            height: 200px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1) rotate(2deg);
+        }
+
+        .img-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 8px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--dark);
+            color: white;
+            font-weight: 300;
+        }
+
+        .note-card {
+            background: #fffef0;
+            border: 1px dashed #ffd43b;
+        }
+
+        @media(max-width:768px){
+            header h1 { font-size: 2rem; }
+            .container { width: 95%; }
+            .card { padding: 20px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🤖 Yapay Zekâya İlk Adım</h1>
+    <p>Küçük Mucitler İçin Geleceğin Rehberi</p>
+</header>
+
+<div class="container">
+
+    <!-- GENEL BAKIŞ -->
+    <div class="card">
+        <h2>🎯 Programın Vizyonu</h2>
+        <p>
+            Bu program, çocuklarımızın teknolojiyi sadece tüketen değil, onun mantığını kavrayan ve geliştiren bireyler olmaları için tasarlanmıştır. 
+            Karmaşık algoritmaları <strong>"Oyunlaştırma"</strong> ve <strong>"Dedektiflik Hikayeleri"</strong> ile somutlaştırıyoruz.
+        </p>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1200" alt="Gelecek">
+                <div class="img-caption">Hayal Gücü ve Teknoloji</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200" alt="Eğitim">
+                <div class="img-caption">Birlikte Öğrenme</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. HAFTA -->
+    <div class="card">
+        <span class="week-badge">1. HAFTA</span>
+        <div class="week-title">🤖 Merhaba Yapay Zekâ!</div>
+        
+        <div class="method-box">
+            <strong>Ana Tema:</strong> Bilgisayarlar da öğrenebilir mi? İnsan beyni ve işlemci arasındaki farklar.
+        </div>
+
+        <h2>📖 Kazanımlar</h2>
+        <ul>
+            <li>Yapay zekânın "cansız bir yardımcı" olduğunu kavrar.</li>
+            <li>Siri, otonom araçlar ve akıllı süpürgeler gibi örnekleri tanır.</li>
+        </ul>
+
+        <h2>🎨 Etkinlikler</h2>
+        <ul>
+            <li><strong>"Robot mu İnsan mı?" Oyunu:</strong> Karışık yetenek kartlarını (yemek yemek, çok hızlı toplama yapmak vb.) sınıflandırma.</li>
+            <li><strong>Quick, Draw! Deneyimi:</strong> Yapay zekânın bizim çizimlerimizi nasıl tahmin ettiğini görme.</li>
+        </ul>
+    </div>
+
+    <!-- 2. HAFTA -->
+    <div class="card">
+        <span class="week-badge">2. HAFTA</span>
+        <div class="week-title">🍎 Makineye Öğretelim (Veri Dünyası)</div>
+        
+        <div class="method-box">
+            <strong>Teknik Metafor:</strong> Makineler meyveleri koklayamaz ama sayılarını (verilerini) okuyabilir.
+        </div>
+
+        <h2>📖 Kazanımlar</h2>
+        <ul>
+            <li><strong>Veri (Data):</strong> Bilgisayarların yemek yediği gibi veri topladığını anlar.</li>
+            <li>Yanlış verinin yanlış sonuçlar doğuracağını (Bias) fark eder.</li>
+        </ul>
+
+        <h2>🎨 Etkinlikler</h2>
+        <ul>
+            <li><strong>Meyve Sepeti Ayrıştırma:</strong> Elma ve armutları özelliklerine (renk, sap, şekil) göre ayırarak bilgisayar gibi düşünme.</li>
+            <li><strong>Teachable Machine Atölyesi:</strong> Kameraya farklı nesneler göstererek mini bir model eğitme.</li>
+        </ul>
+    </div>
+
+    <!-- 3. HAFTA -->
+    <div class="card">
+        <span class="week-badge">3. HAFTA</span>
+        <div class="week-title">🔍 Dedektif Algoritmalar (CNN ve YSA)</div>
+        
+        <div class="method-box">
+            <strong>Teknik Detay:</strong> CNN bir dedektif büyüteci gibidir; resmin tamamına değil, küçük ipuçlarına (kenar, çizgi, renk) bakar.
+        </div>
+
+        <h2>📖 Kazanımlar</h2>
+        <ul>
+            <li>Görüntü tanımanın (CNN) temel mantığını küçük parçalara bölerek anlar.</li>
+            <li>Karar verme zincirini (YSA) bir ekip çalışması olarak görür.</li>
+        </ul>
+
+        <h2>🎨 Etkinlikler</h2>
+        <ul>
+            <li><strong>Delikli Karton Oyunu:</strong> Bir resmin sadece %10'unu görerek ne olduğunu tahmin etmeye çalışma (CNN simülasyonu).</li>
+            <li><strong>Bilgi Zinciri Draması:</strong> Öğrencilerin el ele tutuşarak bilgiyi birinden diğerine aktardığı bir "Sinir Ağı" oluşturma.</li>
+        </ul>
+    </div>
+
+    <!-- 4. HAFTA -->
+    <div class="card">
+        <span class="week-badge">4. HAFTA</span>
+        <div class="week-title">🌟 Ben de Yapabilirim! (Proje Günü)</div>
+
+        <h2>📖 Kazanımlar</h2>
+        <ul>
+            <li>Öğrendiği kavramları birleştirerek bir sorun çözme hayali kurar.</li>
+            <li>Yapay zekânın etik kullanımı (iyilik için teknoloji) üzerine düşünür.</li>
+        </ul>
+
+        <h2>🎨 Etkinlikler</h2>
+        <ul>
+            <li><strong>Hayalimdeki Robotu Tasarlıyorum:</strong> "Denizleri temizleyen bir yapay zekâ nasıl görürdü?" konulu tasarım çalışması.</li>
+            <li><strong>Mini Teknofest Sunumu:</strong> Grupların kendi fikirlerini "Büyük Jüri"ye sunması.</li>
+        </ul>
+    </div>
+
+    <!-- ÖĞRETMEN NOTLARI -->
+    <div class="card note-card">
+        <h2>💡 Eğitimciye İpuçları</h2>
+        <ul>
+            <li>Asla matematiksel formüllere girmeyin; bunun yerine <strong>"Puanlama Oyunu"</strong> deyin.</li>
+            <li>Yapay zekânın hata yaptığı anları (örneğin bir kediyi köpek sandığında) kutlayın; bu, verinin önemini anlatmak için en iyi andır!</li>
+            <li>Haftalık ilerlemeyi bir "Yapay Zeka Pasaportu"na atılan çıkartmalarla ödüllendirin.</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>Sakarya Cevat Ayhan Fen Lisesi - Yapay Zeka Danışmanlık Projesi © 2026</p>
+    <small>Gelecek, onu bugünden hayal edenlerindir.</small>
+</div>
+
+</body>
+</html>
